@@ -33,8 +33,8 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Сервис получения печатной формы")
-                .description("Сервис получения печатной формы из dsl(json)")
+                .title("Сервис обработки технического задания")
+                .description("Сервис обработки технического задания")
                 .version("1")
                 .build();
     }
