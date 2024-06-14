@@ -92,13 +92,13 @@ public class ParserController {
         return new ParserResponse();
     }
 
-    @ApiOperation(value = "Удалить ЧТЗ из БД", produces = "application/json")
+    @ApiOperation(value = "Обновить ЧТЗ из БД", produces = "application/json")
     @ApiResponses(value = {
-            @ApiResponse(code = 200, message = "ЧТЗ успешно удалено"),
+            @ApiResponse(code = 200, message = "ЧТЗ успешно обновлено"),
             @ApiResponse(code = 400, message = "Неверный формат запроса"),
             @ApiResponse(code = 500, message = "Внутренняя ошибка сервиса")
     })
-    @PutMapping("/{id}/delete")
+    @PutMapping("/{id}/update")
     public ParserResponse updateChtzById (
             @PathVariable String id,
             @RequestPart("chtzFile") MultipartFile chtzFile
