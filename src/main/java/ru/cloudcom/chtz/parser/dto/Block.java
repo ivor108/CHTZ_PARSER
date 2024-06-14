@@ -22,5 +22,6 @@ public class Block extends ChtzObject {
 
     public Block() {
         this.fields = new ArrayList<Field>();
+        this.setIsVisiblePdf("+");
     }
 }

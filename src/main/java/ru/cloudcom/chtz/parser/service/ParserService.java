@@ -40,7 +40,7 @@ public class ParserService {
         chtz.setSteps(new ArrayList<>());
         for (XWPFTableRow row : table.getRows()) {
             String rowText = rowToString(row);
-//            log.info(rowText);
+            log.info(rowText);
             if (rowCheckType(row, "шаг")) {
                 chtz.getSteps().add(rowToStep(row));
             } else if (rowCheckType(row, "блок")) {
